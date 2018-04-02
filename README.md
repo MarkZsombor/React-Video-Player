@@ -14,4 +14,4 @@ Start the server by running `npm start`
 
 App will then be available for use at [localhost:8080](localhost:8080).
 
-Project uses a React boilerplate found [here](https://github.com/StephenGrider/ReactStarter/).
+Project uses a React boilerplate found [here](https://github.com/StephenGrider/ReduxSimpleStarter).
