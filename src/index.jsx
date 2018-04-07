@@ -6,6 +6,7 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import Header from './components/header';
 
 const API_KEY = 'AIzaSyDvNfz04W6ixnsGi9uwQpzhidX0zreQiYE';
 
@@ -18,7 +19,7 @@ class App extends Component {
       selectedVideo: null,
     };
 
-    this.videoSearch('Jim Sterling');
+    this.videoSearch('kittens');
   }
 
   videoSearch(term) {
@@ -35,6 +36,7 @@ class App extends Component {
 
     return (
       <div>
+        <Header />
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList

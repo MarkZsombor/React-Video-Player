@@ -1,5 +1,5 @@
 .search-bar {
-  margin: 20px;
+  margin: 80px 0px 20px;
   text-align: center;
 }
 
@@ -20,4 +20,14 @@
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.navbar {
+  background-color: palevioletred;
+  height: 60px;
+
+}
+
+.navbar-brand {
+  color: black;
 }
