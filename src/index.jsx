@@ -6,7 +6,7 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-import Header from './components/header';
+import NavBar from './components/navbar';
 
 const API_KEY = 'AIzaSyDvNfz04W6ixnsGi9uwQpzhidX0zreQiYE';
 
@@ -17,6 +17,7 @@ class App extends Component {
     this.state = {
       videos: [],
       selectedVideo: null,
+      title: "No Name Brand Video-Tube",
     };
 
     this.videoSearch('kittens');
@@ -33,10 +34,9 @@ class App extends Component {
 
   render() {
     const videoSearch = _.debounce((term) => { this.videoSearch(term); }, 300);
-
     return (
       <div>
-        <Header />
+        <NavBar title={this.state.title} />
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
