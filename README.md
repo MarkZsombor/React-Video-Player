@@ -10,7 +10,7 @@ First, clone the repo.
 
 In the program directory run `npm install` to install dependancies.
 
-Start the server by running `npm start`
+Start the server by running `npm run dev`
 
 App will then be available for use at [localhost:8080](localhost:8080).
 
